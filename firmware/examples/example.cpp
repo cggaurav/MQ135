@@ -23,7 +23,7 @@ void loop() {
 
     int co2_ppm = gasSensor.getPPM();
     int ppm = co2_ppm / 4;
-    Spark.variable("ppm", &ppm, INT);                    
+    Spark.variable("ppm", &ppm, INT);
 
     delay(10000);
 }
